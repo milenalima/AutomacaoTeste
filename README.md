@@ -18,10 +18,10 @@ O Vs Code deve ser instalado normalmente (opicional) e será usado como ambiente
 
 O Gradle deve ser descompactado em uma pasta e configurado no PATH do sistema operacional e também deve ser criado um GRADLE_HOME.
 
-Se tudo for corretamente instalado e configurado com um Command Shell aberto ao usar o comando "gradle -v" o seguinte status deve ser retornado:
+Se tudo for corretamente instalado e configurado com um Command Shell aberto ao usar o comando *"gradle -v"*.
 
 Para rodar o projeto é preciso:
 
 Abrir o prompt de comando cmd ou powershell no caminho do projeto
 
-Executar o comando *gradle bdd*, para rodar o projeto inteiro ou *gradle bdd -Ptag=@<tag_do_caso_de_teste>* para rodar um caso de teste específico.
+Executar o comando *"gradle bdd"*, para rodar o projeto inteiro ou *"gradle bdd -Ptag=@<tag_do_caso_de_teste>"* para rodar um caso de teste específico.
