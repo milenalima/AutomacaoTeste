@@ -1,0 +1,23 @@
+if (System.getenv('SNAP_CI')) {
+	tasks.cucumber {
+		jvmOptions.systemProperties("webdriver.chrome.driver": "/usr/local/bin/chromedriver")
+		jvmOptions.systemProperties("file.encoding": "ISO-8859-1")
+	}
+
+	tasks.withType(Test) {
+		testLogging {
+			exceptionFormat = 'full'
+		}
+	}
+	
+	tasks.withType(JavaCompile) {
+    	options.encoding = 'ISO-8859-1'
+	}
+
+	tasks.withType(GroovyCompile) {
+ 		options.encoding = 'ISO-8859-1' // defaults to UTF-8
+	}
+
+	compileJava.options.encoding = 'ISO-8859-1'
+	compileGroovy.options.encoding = 'ISO-8859-1'
+}

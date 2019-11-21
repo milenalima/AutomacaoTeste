@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="79.973138">
+<testcase classname="Acessar a página inicial da loja" name="Acesso com sucesso 2" time="16.795232">
+<system-out><![CDATA[Dado que o usuário vá na página da loja.....................................passed
+Então estará na página inicial..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verificar fluxo de compra" name="Verificar se produto foi adicionado em AdicionarProdutoCarrinho 2" time="63.177906">
+<failure message="geb.waiting.WaitTimeoutException: condition did not pass in 30.0 seconds (failed with exception)&#13;&#10;&#9;at geb.waiting.Wait.waitFor(Wait.groovy:134)&#13;&#10;&#9;at geb.waiting.Wait$waitFor.call(Unknown Source)&#13;&#10;&#9;at geb.waiting.DefaultWaitingSupport.doWaitFor(DefaultWaitingSupport.groovy:50)&#13;&#10;&#9;at geb.waiting.DefaultWaitingSupport.waitFor(DefaultWaitingSupport.groovy:41)&#13;&#10;&#9;at geb.waiting.DefaultWaitingSupport.waitFor(DefaultWaitingSupport.groovy)&#13;&#10;&#9;at geb.waiting.WaitingSupport$waitFor.call(Unknown Source)&#13;&#10;&#9;at geb.Page.waitFor(Page.groovy:118)&#13;&#10;&#9;at geb.Browser.methodMissing(Browser.groovy:249)&#13;&#10;&#9;at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:106)&#13;&#10;&#9;at submarino-steps$_run_closure3.doCall(submarino-steps.groovy:29)&#13;&#10;&#9;at ✽.verifica resultado da busca(D:/Desafio Zup/VS Code/cucumber-geb/src/cucumber/resources/features/submarino.feature:15)&#13;&#10;Caused by: geb.error.RequiredPageContentNotPresent: The required page content 'pages.SubmarinoPage -&gt; txtProductTitle: geb.navigator.EmptyNavigator' is not present&#13;&#10;&#9;at geb.content.TemplateDerivedPageContent.require(TemplateDerivedPageContent.groovy:61)&#13;&#10;&#9;at geb.content.PageContentTemplate$_create_closure1.doCall(PageContentTemplate.groovy:63)&#13;&#10;&#9;at geb.content.PageContentTemplate$_create_closure1.doCall(PageContentTemplate.groovy)&#13;&#10;&#9;at geb.content.PageContentTemplate.create(PageContentTemplate.groovy:87)&#13;&#10;&#9;at geb.content.PageContentTemplate.get(PageContentTemplate.groovy:54)&#13;&#10;&#9;at geb.content.DefaultPageContentSupport.getContent(DefaultPageContentSupport.groovy:42)&#13;&#10;&#9;at geb.content.PageContentSupport.propertyMissing(PageContentSupport.groovy:41)&#13;&#10;&#9;at geb.content.PageContentSupport$propertyMissing.call(Unknown Source)&#13;&#10;&#9;at geb.Page.propertyMissing(Page.groovy:112)&#13;&#10;&#9;at submarino-steps$_run_closure3$_closure7.doCall(submarino-steps.groovy:30)&#13;&#10;&#9;at submarino-steps$_run_closure3$_closure7.doCall(submarino-steps.groovy)&#13;&#10;&#9;at geb.waiting.Wait.waitFor(Wait.groovy:123)&#13;&#10;&#9;at geb.waiting.Wait$waitFor.call(Unknown Source)&#13;&#10;&#9;at geb.waiting.DefaultWaitingSupport.doWaitFor(DefaultWaitingSupport.groovy:50)&#13;&#10;&#9;at geb.waiting.DefaultWaitingSupport.waitFor(DefaultWaitingSupport.groovy:41)&#13;&#10;&#9;at geb.waiting.DefaultWaitingSupport.waitFor(DefaultWaitingSupport.groovy)&#13;&#10;&#9;at geb.waiting.WaitingSupport$waitFor.call(Unknown Source)&#13;&#10;&#9;at geb.Page.waitFor(Page.groovy:118)&#13;&#10;&#9;at geb.Browser.methodMissing(Browser.groovy:249)&#13;&#10;&#9;at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:106)&#13;&#10;&#9;at submarino-steps$_run_closure3.doCall(submarino-steps.groovy:29)&#13;&#10;&#9;at cucumber.runtime.groovy.GroovyBackend.invoke(GroovyBackend.java:166)&#13;&#10;&#9;at cucumber.runtime.groovy.GroovyStepDefinition.lambda$execute$0(GroovyStepDefinition.java:69)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.groovy.GroovyStepDefinition.execute(GroovyStepDefinition.java:68)&#13;&#10;&#9;at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:63)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:49)&#13;&#10;&#9;at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:44)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:40)&#13;&#10;&#9;at cucumber.runtime.Runtime$1.run(Runtime.java:84)&#13;&#10;&#9;at cucumber.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:220)&#13;&#10;&#9;at cucumber.runtime.Runtime.run(Runtime.java:81)&#13;&#10;&#9;at cucumber.api.cli.Main.run(Main.java:26)&#13;&#10;&#9;at cucumber.api.cli.Main.main(Main.java:8)&#13;&#10;"><![CDATA[Dado que o usuário vá na página da loja.....................................passed
+Então estará na página inicial..............................................passed
+Dado que usuário esteja na página da loja...................................passed
+E busca por produto 'Samsung A50'...........................................passed
+E verifica resultado da busca...............................................failed
+Quando adiciona ao carrinho.................................................skipped
+Então verifica o carrinho...................................................skipped
+
+StackTrace:
+geb.waiting.WaitTimeoutException: condition did not pass in 30.0 seconds (failed with exception)
+	at geb.waiting.Wait.waitFor(Wait.groovy:134)
+	at geb.waiting.Wait$waitFor.call(Unknown Source)
+	at geb.waiting.DefaultWaitingSupport.doWaitFor(DefaultWaitingSupport.groovy:50)
+	at geb.waiting.DefaultWaitingSupport.waitFor(DefaultWaitingSupport.groovy:41)
+	at geb.waiting.DefaultWaitingSupport.waitFor(DefaultWaitingSupport.groovy)
+	at geb.waiting.WaitingSupport$waitFor.call(Unknown Source)
+	at geb.Page.waitFor(Page.groovy:118)
+	at geb.Browser.methodMissing(Browser.groovy:249)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:106)
+	at submarino-steps$_run_closure3.doCall(submarino-steps.groovy:29)
+	at ✽.verifica resultado da busca(D:/Desafio Zup/VS Code/cucumber-geb/src/cucumber/resources/features/submarino.feature:15)
+Caused by: geb.error.RequiredPageContentNotPresent: The required page content 'pages.SubmarinoPage -> txtProductTitle: geb.navigator.EmptyNavigator' is not present
+	at geb.content.TemplateDerivedPageContent.require(TemplateDerivedPageContent.groovy:61)
+	at geb.content.PageContentTemplate$_create_closure1.doCall(PageContentTemplate.groovy:63)
+	at geb.content.PageContentTemplate$_create_closure1.doCall(PageContentTemplate.groovy)
+	at geb.content.PageContentTemplate.create(PageContentTemplate.groovy:87)
+	at geb.content.PageContentTemplate.get(PageContentTemplate.groovy:54)
+	at geb.content.DefaultPageContentSupport.getContent(DefaultPageContentSupport.groovy:42)
+	at geb.content.PageContentSupport.propertyMissing(PageContentSupport.groovy:41)
+	at geb.content.PageContentSupport$propertyMissing.call(Unknown Source)
+	at geb.Page.propertyMissing(Page.groovy:112)
+	at submarino-steps$_run_closure3$_closure7.doCall(submarino-steps.groovy:30)
+	at submarino-steps$_run_closure3$_closure7.doCall(submarino-steps.groovy)
+	at geb.waiting.Wait.waitFor(Wait.groovy:123)
+	at geb.waiting.Wait$waitFor.call(Unknown Source)
+	at geb.waiting.DefaultWaitingSupport.doWaitFor(DefaultWaitingSupport.groovy:50)
+	at geb.waiting.DefaultWaitingSupport.waitFor(DefaultWaitingSupport.groovy:41)
+	at geb.waiting.DefaultWaitingSupport.waitFor(DefaultWaitingSupport.groovy)
+	at geb.waiting.WaitingSupport$waitFor.call(Unknown Source)
+	at geb.Page.waitFor(Page.groovy:118)
+	at geb.Browser.methodMissing(Browser.groovy:249)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:106)
+	at submarino-steps$_run_closure3.doCall(submarino-steps.groovy:29)
+	at cucumber.runtime.groovy.GroovyBackend.invoke(GroovyBackend.java:166)
+	at cucumber.runtime.groovy.GroovyStepDefinition.lambda$execute$0(GroovyStepDefinition.java:69)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.groovy.GroovyStepDefinition.execute(GroovyStepDefinition.java:68)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:44)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.runtime.Runtime$1.run(Runtime.java:84)
+	at cucumber.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:220)
+	at cucumber.runtime.Runtime.run(Runtime.java:81)
+	at cucumber.api.cli.Main.run(Main.java:26)
+	at cucumber.api.cli.Main.main(Main.java:8)
+]]></failure>
+</testcase>
+</testsuite>
